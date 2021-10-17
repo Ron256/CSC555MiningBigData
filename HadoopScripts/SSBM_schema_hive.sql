@@ -40,5 +40,27 @@ SELECT TRANSFORM (p_partkey, p_name, p_mfgr, p_category, p_brand1, p_color, p_ty
 USING 'python partSwampedTransform.py'
 AS (p_partkey, p_name, p_mfgr, p_category, p_brand1, p_color, p_type, p_size, p_container) FROM part;
 
-
- 
+create table lineorder (
+  lo_orderkey          int,
+  lo_linenumber        int,
+  lo_custkey           int,
+  lo_partkey           int,
+  lo_suppkey           int,
+  lo_orderdate         int,
+  lo_orderpriority     varchar(15),
+  lo_shippriority      varchar(1),
+  lo_quantity          int,
+  lo_extendedprice     int,
+  lo_ordertotalprice   int,
+  lo_discount          int,
+  lo_revenue           int,
+  lo_supplycost        int,
+  lo_tax               int,
+  lo_commitdate         int,
+  lo_shipmode          varchar(10)    
+)
+ROW FORMAT DELIMITED FIELDS
+TERMINATED BY '|' STORED AS TEXTFILE;
+/*This is for loading the data*/
+LOAD DATA LOCAL INPATH '/home/ec2‐user/lineorder.tbl'
+OVERWRITE INTO TABLE lineorder;
