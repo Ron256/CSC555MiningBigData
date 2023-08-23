@@ -4,7 +4,7 @@ This repository houses the Introduction to fundamentals of distributed file syst
 
 There are projects implemented in each of the above topics of distributed file systems and map-reduce technology. 
 
-Assignment 1 focused 
+Assignment 1 focused on:
 
 1. on understanding the replication factor and storage cost of a file in Hadoop Distributed FileSystem.
 
@@ -20,7 +20,7 @@ randoms between the three dictionaries. Each time a word was processed,  chose a
 
 6. Using urllib, wrote a python code that measured the speed of reading from the web and writing to a file on the local file system. The code reads and writes some amount of data, time the operation and computes the read or write rate (in MBytes/sec)
 
-Assignment 2 focused:
+Assignment 2 focused on:
 
 1. describing the implementation of a MapReduce job using either my own words or pseudo code.
 
@@ -36,7 +36,7 @@ Assignment 2 focused:
 
 7. Used HIVE to run a few queries over the Hadoop framework. 
 
-Assignment 3 focused:
+Assignment 3 focused on:
 
 1. Describing the implementation of the SQL queries in MapReduce.
 
@@ -50,7 +50,7 @@ Assignment 3 focused:
 
 6. Using Pig to load HDFS files.
 
-Assignment 4 focused:
+Assignment 4 focused on:
 
 1. Implementation of the SQL queries using Hadoop Streaming.
 
@@ -58,7 +58,7 @@ Assignment 4 focused:
 
 3. Creating HBase tables on top of the HDFS.
 
-Assignment 5 focused:
+Assignment 5 focused on:
 
 1. Understanding Key-Value store, Column-oriented store, Document-oriented store, graph database, relational databases, streaming engine.
 
@@ -68,7 +68,7 @@ Assignment 5 focused:
 
 4. Used Mahout to run the page rank algorithm.
 
-Assignment 6 focused:
+Assignment 6 focused on:
 
 1. the application of Spark and Storm
 2. Implemented Streaming queries to compute the 4-value windowed average that moves 2 tuples at atime.
